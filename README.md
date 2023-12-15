@@ -2,17 +2,35 @@
 ## CS5004: Object Oriented Design
 
 Creating animations takes time, and one must learn the necessary tools that are often difficult to master (eg using Flash, creating web animations, etc.)
-This project is an application that helps to create simple but effective 2D animations from shapes from a description of animation.
+This project is a Java-Swing-based application that helps to create simple but effective 2D animations from shapes from a description of animation. 
 Here are a few examples:
 
-A simple 2D Animation:\
+#### A simple 2D Animation:
 ![smalldemo](https://github.com/acymoy/2D-Animator/assets/105390880/f7d2030f-cb2e-4409-a7d5-3b2e105cfb6a)
 
-The Towers of Hanoi:\
+#### The Towers of Hanoi:
 ![toh-5](https://github.com/acymoy/2D-Animator/assets/105390880/88c6a639-9c6a-4787-ad31-3f9613f33793)
 
-Big Bang/Crunch:\
+#### Big Bang/Crunch:
 ![big-bang-big-crunch](https://github.com/acymoy/2D-Animator/assets/105390880/43dce337-c451-402c-99f8-a2c7ad87ce91)
+
+### Running the Application
+To run the app, the program takes inputs as CLI arguments. The arguments are in the form of:
+`-in "name-of-animation-file" -view "type-of-view" -out "where-output-show-go" -speed "integer-ticks-per-second"`
+
+Characteristics of a valid input are:
+- Each pair of arguments (`-in "input-file"`, `-out "output-file"`, etc.) may appear in any order.
+- Each pair of arguments are ordered. That is, if the user types `-in` then the next input must be the name of an input file, and so on.
+- Providing an input file (the `-in` pair) and a view (the `-view` pair) are mandatory. If the output set is not specified and the view needs it, the default should be System.out. If the speed is not specified and the view needs it, the default is 1 tick per second.
+
+Examples of valid CLIs:
+- `-in smalldemo.txt -view text -speed 2`: use smalldemo.txt for the animation file, and create a text view with its output going to System.out, and a speed of 2 ticks per second.
+
+- `-view svg -out out.svg -in buildings.txt`: use buildings.txt for the animation file, and create an SVG view with its output going to the file out.svg, with a speed of 1 tick per second.
+
+- `-in smalldemo.txt -view text`: use smalldemo.txt for the animation file, and create a text view with its output going to System.out.
+
+- `-in smalldemo.txt -speed 50 -view visual`: use smalldemo.txt for the animation file, and create a visual view to show the animation at a speed of 50 ticks per second.
 
 ### Description of Animation
 Here is an example description of an animation: 

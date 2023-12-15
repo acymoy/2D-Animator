@@ -1,5 +1,4 @@
 # 2D Animator
-## CS5004: Object Oriented Design
 
 Creating animations takes time, and one must learn the necessary tools that are often difficult to master (eg using Flash, creating web animations, etc.)
 This project is a Java-Swing-based application that helps to create simple but effective 2D animations from shapes from a description of animation. 

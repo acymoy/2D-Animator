@@ -18,6 +18,8 @@ Here are a few examples:
 To run the app, the program takes inputs as CLI arguments. The arguments are in the form of:
 `-in "name-of-animation-file" -view "type-of-view" -out "where-output-show-go" -speed "integer-ticks-per-second"`
 
+Example command: `java -jar Final_Project.jar -in hanoi.txt -speed 50 -view playback`
+
 - Input files are text files (some examples are already included in the repo)
 - View can be one of four types: `playback` (player controls), `visual` (just the animation), `text`, or `svg`.
 - Input file and view are both mandatory. Default output is System.out, and default speed is 1 tick per second (if that specific view requires it).

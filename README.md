@@ -18,6 +18,10 @@ Here are a few examples:
 To run the app, the program takes inputs as CLI arguments. The arguments are in the form of:
 `-in "name-of-animation-file" -view "type-of-view" -out "where-output-show-go" -speed "integer-ticks-per-second"`
 
+- Input files are text files (some examples are already included in the repo)
+- View can be one of four types: `playback` (player controls), `visual` (just the animation), `text`, or `svg`.
+
+
 Characteristics of a valid input are:
 - Each pair of arguments (`-in "input-file"`, `-out "output-file"`, etc.) may appear in any order.
 - Each pair of arguments are ordered. That is, if the user types `-in` then the next input must be the name of an input file, and so on.

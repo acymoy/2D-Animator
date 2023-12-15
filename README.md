@@ -20,12 +20,7 @@ To run the app, the program takes inputs as CLI arguments. The arguments are in 
 
 - Input files are text files (some examples are already included in the repo)
 - View can be one of four types: `playback` (player controls), `visual` (just the animation), `text`, or `svg`.
-
-
-Characteristics of a valid input are:
-- Each pair of arguments (`-in "input-file"`, `-out "output-file"`, etc.) may appear in any order.
-- Each pair of arguments are ordered. That is, if the user types `-in` then the next input must be the name of an input file, and so on.
-- Providing an input file (the `-in` pair) and a view (the `-view` pair) are mandatory. If the output set is not specified and the view needs it, the default should be System.out. If the speed is not specified and the view needs it, the default is 1 tick per second.
+- Input file and view are both mandatory. Default output is System.out, and default speed is 1 tick per second (if that specific view requires it).
 
 Examples of valid CLIs:
 - `-in smalldemo.txt -view text -speed 2`: use smalldemo.txt for the animation file, and create a text view with its output going to System.out, and a speed of 2 ticks per second.
